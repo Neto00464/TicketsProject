@@ -9,6 +9,9 @@ public class Mensaje {
     private Date FechaActual;
     private String DescripcionMensaje;
 
+    public Mensaje() {
+    }
+    
     public Mensaje(int IdMensaje, String idChat, Date FechaActual, String DescripcionMensaje) {
         this.IdMensaje = IdMensaje;
         this.idChat = idChat;
