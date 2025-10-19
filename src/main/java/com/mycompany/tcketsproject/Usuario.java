@@ -3,50 +3,50 @@ package com.mycompany.tcketsproject;
 
 
 public class Usuario {
-    private int idUsuario;
-    private String name;
-    private String email;
-    private String labor;
+    private int IdUsuario;
+    private String Name;
+    private String Email;
+    private String Labor;
 
-    public Usuario(int idUsuario, String name, String email, String labor) {
-        this.idUsuario = idUsuario;
-        this.name = name;
-        this.email = email;
-        this.labor = labor;
+    public Usuario(int IdUsuario, String Name, String Email, String Labor) {
+        this.IdUsuario = IdUsuario;
+        this.Name = Name;
+        this.Email = Email;
+        this.Labor = Labor;
     }
 
     public int getIdUsuario() {
-        return idUsuario;
+        return IdUsuario;
     }
 
-    public void setIdUsuario(int idUsuario) {
-        this.idUsuario = idUsuario;
+    public void setIdUsuario(int IdUsuario) {
+        this.IdUsuario = IdUsuario;
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String Email) {
+        this.Email = Email;
     }
 
     public String getLabor() {
-        return labor;
+        return Labor;
     }
 
-    public void setLabor(String labor) {
-        this.labor = labor;
+    public void setLabor(String Labor) {
+        this.Labor = Labor;
     }
     
     
-    
+
 }
