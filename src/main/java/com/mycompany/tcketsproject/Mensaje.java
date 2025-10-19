@@ -5,16 +5,16 @@ import java.util.Date;
 
 public class Mensaje {
     private int IdMensaje;
-    private String idChat;
+    private String idTiquete;
     private Date FechaActual;
     private String DescripcionMensaje;
 
     public Mensaje() {
     }
     
-    public Mensaje(int IdMensaje, String idChat, Date FechaActual, String DescripcionMensaje) {
+    public Mensaje(int IdMensaje, String idTiquete, Date FechaActual, String DescripcionMensaje) {
         this.IdMensaje = IdMensaje;
-        this.idChat = idChat;
+        this.idTiquete = idTiquete;
         this.FechaActual = FechaActual;
         this.DescripcionMensaje = DescripcionMensaje;
     }
@@ -27,12 +27,12 @@ public class Mensaje {
         this.IdMensaje = IdMensaje;
     }
 
-    public String getIdChat() {
-        return idChat;
+    public String getidTiquete() {
+        return idTiquete;
     }
 
-    public void setIdChat(String idChat) {
-        this.idChat = idChat;
+    public void setidTiquete(String idTiquete) {
+        this.idTiquete = idTiquete;
     }
 
     public Date getFechaActual() {
@@ -50,8 +50,5 @@ public class Mensaje {
     public void setDescripcionMensaje(String DescripcionMensaje) {
         this.DescripcionMensaje = DescripcionMensaje;
     }
-    
-    
-    
-    
+  
 }
