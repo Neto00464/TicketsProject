@@ -2,58 +2,39 @@
 package com.mycompany.tcketsproject;
 
 public class Tiquete {
-    private int IdTiquete;
-    private String Categoria, Titulo, Prioridad, Estado;
+    private int id;
+    private String titulo;
+    private String descripcion;
+    private String prioridad;
+    private String categoria;
+    private String estado; // abierto, en_progreso, resuelto, cerrado
 
-    public Tiquete(int IdTiquete, String Categoria, String Titulo, String Prioridad, String Estado) {
-        this.IdTiquete = IdTiquete;
-        this.Categoria = Categoria;
-        this.Titulo = Titulo;
-        this.Prioridad = Prioridad;
-        this.Estado = Estado;
+    private Usuario creador;
+    private Usuario asignado;
+
+    private Chat chat;
+
+    public Tiquete(int id, String titulo, String descripcion, String prioridad, String categoria, Usuario creador) {
+        this.id = id;
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.prioridad = prioridad;
+        this.categoria = categoria;
+        this.estado = "abierto";
+        this.creador = creador;
+        this.chat = new Chat();
     }
 
-    public int getIdTiquete() {
-        return IdTiquete;
-    }
+    public int getId() { return id; }
+    public String getTitulo() { return titulo; }
+    public String getDescripcion() { return descripcion; }
+    public String getPrioridad() { return prioridad; }
+    public String getCategoria() { return categoria; }
+    public String getEstado() { return estado; }
+    public Usuario getCreador() { return creador; }
+    public Usuario getAsignado() { return asignado; }
+    public Chat getChat() { return chat; }
 
-    public void setIdTiquete(int IdTiquete) {
-        this.IdTiquete = IdTiquete;
-    }
-
-    public String getCategoria() {
-        return Categoria;
-    }
-
-    public void setCategoria(String Categoria) {
-        this.Categoria = Categoria;
-    }
-
-    public String getTitulo() {
-        return Titulo;
-    }
-
-    public void setTitulo(String Titulo) {
-        this.Titulo = Titulo;
-    }
-
-    public String getPrioridad() {
-        return Prioridad;
-    }
-
-    public void setPrioridad(String Prioridad) {
-        this.Prioridad = Prioridad;
-    }
-
-    public String getEstado() {
-        return Estado;
-    }
-
-    public void setEstado(String Estado) {
-        this.Estado = Estado;
-    }
-    
-    
-    
-    
+    public void setEstado(String estado) { this.estado = estado; }
+    public void setAsignado(Usuario asignado) { this.asignado = asignado; }
 }
