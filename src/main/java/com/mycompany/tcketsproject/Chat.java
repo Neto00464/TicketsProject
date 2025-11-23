@@ -8,18 +8,20 @@ import java.util.ArrayList;
 
 
 public class Chat {
-private ArrayList<Mensaje> mensajes;
+    private ArrayList<Mensaje> mensajes;
 
 
-public Chat() {
-this.mensajes = new ArrayList<>();
+    public Chat() {
+        this.mensajes = new ArrayList<>();
+    }
+
+
+    public void agregarMensaje(Mensaje m) {
+        mensajes.add(m);
+    }
+
+
+    public ArrayList<Mensaje> getMensajes() {
+        return mensajes;
+    }
 }
-
-
-public void agregarMensaje(Mensaje m) {
-mensajes.add(m);
-}
-
-
-public ArrayList<Mensaje> getMensajes() {
-return mensajes;
