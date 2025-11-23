@@ -2,51 +2,33 @@
 package com.mycompany.tcketsproject;
 
 
+
 public class Usuario {
-    private int IdUsuario;
-    private String Name;
-    private String Email;
-    private String Labor;
+private int id;
+private String nombre;
+private String correo;
+private String password;
+private String rol; // empleado, tecnico, admin
 
-    public Usuario(int IdUsuario, String Name, String Email, String Labor) {
-        this.IdUsuario = IdUsuario;
-        this.Name = Name;
-        this.Email = Email;
-        this.Labor = Labor;
-    }
 
-    public int getIdUsuario() {
-        return IdUsuario;
-    }
+public Usuario(int id, String nombre, String correo, String password, String rol) {
+this.id = id;
+this.nombre = nombre;
+this.correo = correo;
+this.password = password;
+this.rol = rol;
+}
 
-    public void setIdUsuario(int IdUsuario) {
-        this.IdUsuario = IdUsuario;
-    }
 
-    public String getName() {
-        return Name;
-    }
+public int getId() { return id; }
+public String getNombre() { return nombre; }
+public String getCorreo() { return correo; }
+public String getPassword() { return password; }
+public String getRol() { return rol; }
 
-    public void setName(String Name) {
-        this.Name = Name;
-    }
 
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String Email) {
-        this.Email = Email;
-    }
-
-    public String getLabor() {
-        return Labor;
-    }
-
-    public void setLabor(String Labor) {
-        this.Labor = Labor;
-    }
-    
-    
-
+public void setNombre(String nombre) { this.nombre = nombre; }
+public void setCorreo(String correo) { this.correo = correo; }
+public void setPassword(String password) { this.password = password; }
+public void setRol(String rol) { this.rol = rol; }
 }
