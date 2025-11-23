@@ -1,54 +1,23 @@
 
 package com.mycompany.tcketsproject;
 
-import java.util.Date;
+import java.time.LocalDateTime;
+
 
 public class Mensaje {
-    private int IdMensaje;
-    private String idTiquete;
-    private Date FechaActual;
-    private String DescripcionMensaje;
+private Usuario autor;
+private String contenido;
+private LocalDateTime fecha;
 
-    public Mensaje() {
-    }
-    
-    public Mensaje(int IdMensaje, String idTiquete, Date FechaActual, String DescripcionMensaje) {
-        this.IdMensaje = IdMensaje;
-        this.idTiquete = idTiquete;
-        this.FechaActual = FechaActual;
-        this.DescripcionMensaje = DescripcionMensaje;
-    }
 
-    public int getIdMensaje() {
-        return IdMensaje;
-    }
+public Mensaje(Usuario autor, String contenido) {
+this.autor = autor;
+this.contenido = contenido;
+this.fecha = LocalDateTime.now();
+}
 
-    public void setIdMensaje(int IdMensaje) {
-        this.IdMensaje = IdMensaje;
-    }
 
-    public String getidTiquete() {
-        return idTiquete;
-    }
-
-    public void setidTiquete(String idTiquete) {
-        this.idTiquete = idTiquete;
-    }
-
-    public Date getFechaActual() {
-        return FechaActual;
-    }
-
-    public void setFechaActual(Date FechaActual) {
-        this.FechaActual = FechaActual;
-    }
-
-    public String getDescripcionMensaje() {
-        return DescripcionMensaje;
-    }
-
-    public void setDescripcionMensaje(String DescripcionMensaje) {
-        this.DescripcionMensaje = DescripcionMensaje;
-    }
-  
+public Usuario getAutor() { return autor; }
+public String getContenido() { return contenido; }
+public LocalDateTime getFecha() { return fecha; }
 }
