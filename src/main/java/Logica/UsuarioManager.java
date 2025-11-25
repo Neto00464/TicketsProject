@@ -45,4 +45,20 @@ public class UsuarioManager {
     public ArrayList<Usuario> getUsuarios() {
         return usuarios;
     }
+    
+    public Usuario buscarUsuarioPorCorreo(String correo) {
+    for (Usuario u : usuarios) {
+        if (u.getCorreo().equalsIgnoreCase(correo)) {
+            return u;
+        }
+    }
+    return null;
+}
+
+public boolean validarLogin(String correo, String password) {
+    Usuario user = buscarUsuarioPorCorreo(correo);
+    if (user == null) return false;
+    return user.getPassword().equals(password);
+}
+
 }
