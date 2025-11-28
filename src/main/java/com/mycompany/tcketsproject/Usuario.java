@@ -1,6 +1,4 @@
-
 package com.mycompany.tcketsproject;
-
 
 
 public class Usuario {

@@ -9,24 +9,24 @@ package com.mycompany.tcketsproject;
  * @author Neto
  */
 public class Notificacion {
-private String mensaje;
-private Usuario destinatario;
-private boolean leida;
+    private String mensaje;
+    private Usuario destinatario;
+    private boolean leida;
 
 
-public Notificacion(String mensaje, Usuario destinatario) {
-this.mensaje = mensaje;
-this.destinatario = destinatario;
-this.leida = false;
-}
+    public Notificacion(String mensaje, Usuario destinatario) {
+        this.mensaje = mensaje;
+        this.destinatario = destinatario;
+        this.leida = false;
+    }
 
 
-public String getMensaje() { return mensaje; }
-public Usuario getDestinatario() { return destinatario; }
-public boolean isLeida() { return leida; }
+    public String getMensaje() { return mensaje; }
+    public Usuario getDestinatario() { return destinatario; }
+    public boolean isLeida() { return leida; }
 
 
-public void marcarComoLeida() {
-this.leida = true;
-}
+    public void marcarComoLeida() {
+        this.leida = true;
+    }
 }
